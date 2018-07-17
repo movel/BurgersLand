@@ -4,4 +4,36 @@
 
 #map
 	height: 400px
-    width: 100% 
+    width: 100%
+
+.container
+	margin: 0 auto
+	min-width: 725px
+	text-align: center
+	+r(750) 
+		margin: 0 20px
+
+.header
+	margin: 0 auto
+	&__logo
+		float: left
+	&__nav
+		float: right
+
+.hero
+	height: 100vh
+	min-height: 400px
+	background-size: cover
+	background-position: 50% 100%
+	background-repeat: no-repeat
+	display: table
+	&__container
+		display: table-row
+	&__left, &__right
+		width: 50%
+		display: table-cell
+		height: 100vh
+		background-size: cover
+		background-position: 50% 100%
+		background-repeat: no-repeat
+		border: 0
