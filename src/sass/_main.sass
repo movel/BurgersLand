@@ -28,7 +28,6 @@
 		width: 100%
 		height: 126px
 	&__logo, &__nav
-		// width: 100%
 		position: absolute
 		top: 50%
 		transform: translateY(-50%)
@@ -55,19 +54,70 @@
 		+martel
 
 .hero
-	top: 126px
 	display: table
+	max-width: 1024px
 	width: 100%
 	&__container
 		display: table-row
 	&__left, &__right
-		width: 50%
+		height: 395px
 		display: table-cell
-		height: 100vh
-		background-size: cover
-		background-position: 50% 100%
-		background-repeat: no-repeat
 		border: 0
+		background-repeat: no-repeat 
+		background-size: cover 
+		background-position: 100% 100%
+		
+.left__bckg, .right__bckg
+	width: 100%
+	height: 100%
+	opacity: 0.92
+	padding: 15%
+	position: relative
+	+clr
+.left__bckg
+	background-color: #011627
+.right__bckg
+	background-color: #ff9f1c
+
+.left__content
+	width: 100%
+	height: 100%
+	border: 0
+
+.left__title, .right__title
+	font-size: 65px
+	line-height: 0.923
+	+rubik
+.left__title
+	color: #ffa326
+.right__title
+	color: #ffffff
+
+.left__text, .right__text
+	font-size: 14px
+	+martel
+	line-height: 1.429
+	padding-top: 10%
+.left__text
+	color: #ffffff
+.right__text
+	color: #0d1e2d
+
+.showme
+	+martel
+	font-size: 16px
+	background-color: #ffffff
+	width: 157px
+	height: 37px
+	box-shadow: 0px 3px 5px #444444
+	border: none
+.showme:hover
+	background-color: #dddddd
+.showme:active 
+	background-color: #dddddd
+	transform: translateY(1px)
+.showme:active:after 
+    transition: 0s
 
 .photos__gallery
 	width: 100%
