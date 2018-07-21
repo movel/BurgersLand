@@ -111,12 +111,6 @@
 .showme:active
 	transform: translateY(1px)	
 
-.photos__gallery
-	width: 100%
-	+clr
-	img
-		max-width: 100%
-
 .top__photo 
 	width: 100%
 
@@ -175,6 +169,7 @@
 	background-size: cover 
 	background-position: 100% 100%
 	position: relative
+	+clr
 	&__background
 		height: 100%
 		width: 100%
@@ -219,3 +214,66 @@
 .dish-price
 	max-width: 55px
 	padding-bottom: 15px
+
+.photos
+	margin-top: 65px
+	&__title
+		font-size: 60px
+		+rubik-medium
+		color: #0d1624
+		line-height: 1
+	&__text
+		font-size: 12.18px
+		+martel
+		color: #0b1d2c
+		line-height: 1.286
+		text-align: center
+	h1 
+		margin: 10px auto
+
+.photos__gallery
+	width: 100%
+	margin-top: 65px
+	img
+		max-width: 100%
+		transform: scale(1.01)
+	img:hover
+		transform: scale(1.05)
+	a 
+		cursor: pointer
+
+.gallery__top, .gallery__bottom
+	margin: 0
+	padding: 0
+	line-height: 0.6
+	position: relative
+	+clr
+
+.top__photo
+	width: 33.333333333333333333333333333333%
+	float: left
+	margin: 0
+	img
+		height: 184px
+
+.bottom__photo
+	width: 16.666666666666666666666666666667%
+	float: left
+	margin: 0
+	margin-top: -10px
+	z-index: 900
+	position: relative
+	img
+		height: 92px
+
+.board
+	position: absolute
+	top: -10px
+	left: 0
+	right: 0
+	width: 100.2%
+	margin-left: -1px
+	height: 10px
+	border: 3px solid #ff9f1c
+	box-sizing: border-box
+	z-index: 1000
