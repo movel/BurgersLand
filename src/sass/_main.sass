@@ -32,11 +32,11 @@
 		top: 50%
 		transform: translateY(-50%)
 	&__logo
-		float: left
+		left: 0
 	&__nav
 		margin-left: 40%
 		margin-top: 7px
-		float: right
+		right: 0
 
 .logo
 	font-size: 26px
@@ -52,6 +52,12 @@
 		text-decoration: none
 		color: #0e1d2b
 		+martel
+		line-height: 1.087
+		padding: 0 10px
+	a:hover
+		// +martel-bold
+		font-weight: bold
+		border-bottom: 3px solid #ff9f1c
 
 .hero
 	display: table
