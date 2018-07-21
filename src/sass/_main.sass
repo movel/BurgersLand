@@ -45,6 +45,8 @@
 		color: #0e1d2b
 	&__part2
 		color: #ffa326	
+	&:hover 
+		font-weight: bold
 
 .nav
 	font-size: 16px
@@ -128,10 +130,18 @@
 .prices
 	width: 100%
 	box-sizing: border-box
+	img 
+		max-width: 100%
+	a 
+		cursor: pointer
+	a:hover 
+		border: 1px solid #eeeeee
+		transform: scale(1.05)
 .price
 	display: inline-block
 	width: 22.34482758620%
-	border: 0
+	border: 1px
+	box-sizing: border-box
 	+clr
 	&__center
 		margin: 0 14.89%
