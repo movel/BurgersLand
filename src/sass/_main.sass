@@ -168,13 +168,54 @@
 
 .whatelse
 	width: 100%
-	height: 100%
-	opacity: 0.92
-	&__background	
-		background: linear-gradient(#011627, #ff9f1c) 
+	height: 404px
+	border: 0
+	margin: 0 auto
+	background-repeat: no-repeat 
+	background-size: cover 
+	background-position: 100% 100%
+	position: relative
+	&__background
+		height: 100%
+		width: 100%
+		opacity: 0.92	
+		background: linear-gradient(#011627, #ff9f1c)
+	.container
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 15%
+		text-align: center
+		max-width: 725px
+		width: 100%
+	&__label, &__table
+		display: inline-block
+	&__label
+		padding: 5% 0
+		float: left	
+	&__table
+		font-size: 16px
+		+martel
+		color: #ffffff
+		line-height: 0.979
+		text-align: left
+		width: 288px
+		height: 226px
+		border: 3px solid #ff9f1c
+		float: right
+		table 
+			margin-top: 50px
+			margin-left: 36px
 	&__title
 		font-size: 60px
 		+rubik-medium
 		color: #ffffff
 		line-height: 1
 
+.dish
+	width: 180px
+	padding-bottom: 15px
+
+.dish-price
+	max-width: 55px
+	padding-bottom: 15px
