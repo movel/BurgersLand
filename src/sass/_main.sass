@@ -143,14 +143,14 @@
 	border: 1px
 	box-sizing: border-box
 	margin: 0
-	padding: 10px 0 0 0
+	padding: 50px 0 0 0
 	+clr
 	&__center
 		margin: 0 14.89%
 	&__title
 		font-size: 22.63px
 		+rubik-regular
-		color: #f39c22
+		color: #ffa326
 		line-height: 0.692
 		margin: 7% 0
 	&__text
@@ -188,12 +188,8 @@
 		margin: 0
 	&__oval
 		position: relative
-		+clr
 	&__image
 		position: relative
-		z-index: 1000
-	img 
-		position: absolute
 	
 .oval 
 	width: 180px
@@ -203,8 +199,17 @@
 	-webkit-border-radius: 50%
 	border-radius: 50%
 	border: 3px solid #f39c22
-	transform: rotate(-75deg)
-	z-index: 1002
+	// z-index: 1002
+	top: 0
+	&__img
+		position: relative
+		z-index: 9999
+	&__-75
+		transform: rotate(-75deg)
+	&__15
+		transform: rotate(-45deg)
+	&__30
+		transform: rotate(45deg)
 
 .whatelse
 	width: 100%
