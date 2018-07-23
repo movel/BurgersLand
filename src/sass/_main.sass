@@ -346,6 +346,7 @@
 		line-height: 1.286
 		
 .contacts__wrap
+	margin-top: 65px
 	background-color: #0d1e2d
 	.container
 		padding: 25px 0
@@ -358,10 +359,71 @@
 		+martel
 		color: #ffffff
 		line-height: 1.286
-		text-align: center
+		text-align: left
 	&__form
 		width: 100%
+		input, textarea
+			color: #0b1d2c
+			font-size: 12.18px
+			+martel
+			line-height: 1.286
+			text-align: left
+			padding-left: 10%
+			padding-top: 5px
+			width: 100%
+			height: 30px
+		textarea
+			height: 90px
+		input[type="submit"]
+			font-size: 16px
+			+martel
+			color: #ffffff
+			font-weight: bold
+			line-height: 0.979
+			text-align: center
+			background-color: #ffa326
 
 .locate
 	width: 45%
-	float: right	
+	float: right
+
+.address
+	padding-top: 25px
+	&__title
+		font-size: 18.52px
+		+martel
+		color: #ffffff
+		line-height: 0.979
+		text-align: center
+
+.phone	
+	&__title
+		display: inline-block
+		font-size: 18.52px
+		+martel
+		color: #ffffff
+		line-height: 0.979
+		text-align: center
+	&__number
+		display: inline-block
+		font-size: 46.83px
+		+martel
+		font-weight: bold
+		color: #ffa326
+		line-height: 0.979
+		text-align: center
+		text-decoration: none
+
+.footer
+	background-color: #050b10
+
+.copywright, .website
+	font-size: 12px
+	+martel
+	color: #ffa326
+	line-height: 3.821
+	text-align: center
+	float: left
+
+.website
+	float: right
