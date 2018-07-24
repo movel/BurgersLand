@@ -66,23 +66,16 @@
 	width: 100%
 	position: relative
 	+clr
-	&__container
-		// width: 832px
-		position: relative
-		// margin: 0 auto
-	&__wrap
-		margin: 0 auto
-		// width: 845px
 	&__left, &__right
 		height: 395px
 		display: inline-block
-		float: left
 		width: 50%
+		float: left
 		box-sizing: border-box
 		border: 0
 		background-repeat: no-repeat 
 		background-size: cover 
-		background-position: 100% 100%
+		background-position: 50% 100%
 		
 .left__bckg, .right__bckg
 	width: 100%
@@ -90,9 +83,20 @@
 	opacity: 0.92
 	margin: 0 auto
 	position: relative
-	+clr
+.left__wrap, .right__wrap
+	width: 422px
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+.left__wrap
+	right: 0
+.right__wrap
+	left: 0
+	h1, p
+		padding-left: 17.54%
 .left__bckg
 	background-color: #011627
+
 .right__bckg
 	background-color: #ff9f1c
 
