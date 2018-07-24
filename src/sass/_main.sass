@@ -7,7 +7,7 @@
     width: 100%
 
 .wrapper
-	max-width: 1024px
+	// max-width: 1024px
 	margin: 0 auto
 	+martel
 
@@ -22,9 +22,10 @@
 
 .header
 	margin: 0 auto
+	+clr
 	.container
 		position: relative
-		max-width: 832px
+		max-width: 845px
 		width: 100%
 		height: 126px
 	&__logo, &__nav
@@ -62,14 +63,22 @@
 		border-bottom: 3px solid #ff9f1c
 
 .hero
-	display: table
-	max-width: 1024px
 	width: 100%
+	position: relative
+	+clr
 	&__container
-		display: table-row
+		// width: 832px
+		position: relative
+		// margin: 0 auto
+	&__wrap
+		margin: 0 auto
+		// width: 845px
 	&__left, &__right
 		height: 395px
-		display: table-cell
+		display: inline-block
+		float: left
+		width: 50%
+		box-sizing: border-box
 		border: 0
 		background-repeat: no-repeat 
 		background-size: cover 
@@ -79,7 +88,7 @@
 	width: 100%
 	height: 100%
 	opacity: 0.92
-	padding: 15%
+	margin: 0 auto
 	position: relative
 	+clr
 .left__bckg
@@ -215,7 +224,6 @@
 	width: 100%
 	height: 404px
 	border: 0
-	margin: 0 auto
 	background-repeat: no-repeat 
 	background-size: cover 
 	background-position: 100% 100%
@@ -226,14 +234,13 @@
 		width: 100%
 		opacity: 0.92	
 		background: linear-gradient(#011627, #ff9f1c)
+		position: relative
 	.container
 		position: absolute
 		top: 50%
-		transform: translateY(-50%)
-		left: 15%
-		text-align: center
-		max-width: 725px
-		width: 100%
+		left: 50%
+		transform: translate(-50%,-50%)
+		width: 725px
 	&__label, &__table
 		display: inline-block
 	&__label
