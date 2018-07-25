@@ -18,7 +18,7 @@
 	position: relative
 	+clr
 	+r(750) 
-		margin: 0 20px
+		margin: 0 10px
 
 .header
 	margin: 0 auto
@@ -38,6 +38,32 @@
 		margin-left: 40%
 		margin-top: 7px
 		right: 0
+	+r(750)
+		.container
+			height: 100px
+		&__logo
+			position: relative
+			display: block
+			width: 100%
+			transform: translateY(0)
+			margin: 10px auto
+		&__nav
+			position: relative
+			display: block
+			width: 100%
+			margin: 10px auto
+			transform: translateY(0)
+	+r(500)
+		.container
+			height: 230px
+		&__nav
+			margin-top: 20px
+			a 
+				display: block
+				height: 35px
+				width: 100%
+			a:hover 
+				border: none
 
 .logo
 	font-size: 26px
@@ -58,7 +84,6 @@
 		line-height: 1.087
 		padding: 0 10px
 	a:hover
-		// +martel-bold
 		font-weight: bold
 		border-bottom: 3px solid #ff9f1c
 
@@ -76,6 +101,9 @@
 		background-repeat: no-repeat 
 		background-size: cover 
 		background-position: 50% 100%
+		+r(750)
+			display: block
+			width: 100%
 		
 .left__bckg, .right__bckg
 	width: 100%
@@ -90,10 +118,22 @@
 	transform: translateY(-50%)
 .left__wrap
 	right: 0
+	+r(750)
+		width: 100%
+		margin: 0 auto
+		font-size: 50px
+		h1, p 
+			padding-left: 10%
 .right__wrap
 	left: 0
 	h1, p
 		padding-left: 17.54%
+	+r(750)
+		width: 100%
+		font-size: 50px
+		h1, p 
+			padding-left: 10%
+		
 .left__bckg
 	background-color: #011627
 
@@ -104,6 +144,8 @@
 	font-size: 65px
 	line-height: 0.923
 	+rubik-medium
+	+r(750)
+		font-size: 50px
 .left__title
 	color: #ffa326
 .right__title
@@ -203,7 +245,16 @@
 		position: relative
 	&__image
 		position: relative
-	
+	+r(750)
+		&__bucks
+			font-size: 16px
+			margin: 0 3px
+	+r(620)
+		display: block
+		width: 60%
+		margin: 10px auto
+		+clr
+
 .oval 
 	width: 180px
 	height: 90px
@@ -212,7 +263,6 @@
 	-webkit-border-radius: 50%
 	border-radius: 50%
 	border: 3px solid #f39c22
-	// z-index: 1002
 	top: 0
 	&__img
 		position: relative
@@ -223,6 +273,8 @@
 		transform: rotate(-45deg)
 	&__30
 		transform: rotate(45deg)
+	+r(620)
+		left: 25%
 
 .whatelse
 	width: 100%
@@ -268,6 +320,20 @@
 		+rubik-medium
 		color: #ffffff
 		line-height: 1
+	+r(750)
+		&__label, &__table
+			display: block
+			width: 100%
+			float: none
+		&__table
+			width: 60%
+			height: 100%
+			margin: 0 auto
+			box-sizing: border-box
+			text-align: center
+			table 
+				width: 100%
+				margin-left: 20px
 
 .dish
 	width: 180px
@@ -319,6 +385,10 @@
 	margin: 0
 	img
 		height: 184px
+	+r(750)
+		width: 100%
+		float: left
+		margin: 10px auto
 
 .bottom__photo
 	width: 16.666666666666666666666666666667%
@@ -329,6 +399,12 @@
 	position: relative
 	img
 		height: 92px
+	+r(750)
+		width: 100%
+		float: left
+		margin: 10px auto
+		img 
+			height: 184px
 
 .board
 	position: absolute
@@ -341,6 +417,8 @@
 	border: 3px solid #ff9f1c
 	box-sizing: border-box
 	z-index: 1000
+	+r(750)
+		border: none
 
 .contacts
 	margin-top: 65px
@@ -383,10 +461,33 @@
 			line-height: 0.979
 			text-align: center
 			background-color: #ffa326
+	+r(620)
+		width: 100%
+		&__title
+			margin: 10px
+			margin-left: 10%
+		&__form
+			width: 80%
+			margin: 0 auto
+			input, textarea
+				color: #0b1d2c
+				font-size: 12.18px
+				+martel
+				line-height: 1.286
+				text-align: left
+				padding-left: 10%
+				margin-top: 5px
+				width: 100%
+				height: 30px
+			textarea
+				height: 90px
 
 .locate
 	width: 45%
 	float: right
+	+r(620)
+		width: 100%
+		margin-top: 25px
 
 .address
 	padding-top: 25px
